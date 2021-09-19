@@ -1,24 +1,27 @@
-# README
+# To dos app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple to do app clone of the [TodoMVC](https://todomvc.com/) example apps. This is used as a toy application to pair on when hiring software engineers at Sell with AMI.
 
-Things you may want to cover:
+## Getting Started
+Install Ruby 3.0.2 using your preferred ruby manager:
+``` sh
+# via ruby
+asdf install ruby
 
-* Ruby version
+# via rbenv
+rbenv install
+```
 
-* System dependencies
+Install Node JS 14.17.6 using your preferred manager:
+``` sh
+# via asdf
+asdf install nodejs
 
-* Configuration
+# via nvm
+nvm install
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Once Ruby and NodeJS are installed:
+```sh
+./bin/setup
+```
