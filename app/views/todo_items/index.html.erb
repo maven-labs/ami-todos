@@ -1,9 +1,7 @@
-<p id="notice"><%= notice %></p>
-
 <h1>todos</h1>
 
 <%= form_with(model: TodoItem.new) do |form| %>
-  <%= form.text_field :title, placeholder: 'What needs to be done?' %>
+  <%= form.text_field :title, placeholder: 'What needs to be done?', autofocus: true %>
 <% end %>
 
 
@@ -17,3 +15,5 @@
   </li>
 <% end %>
 </ol>
+
+<p id="notice"><%= notice %></p>
