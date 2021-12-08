@@ -20,7 +20,7 @@ class TodoItemsControllerTest < ActionDispatch::IntegrationTest
       post todo_items_url, params: { todo_item: { title: @todo_item.title } }
     end
 
-    assert_redirected_to todo_item_url(TodoItem.last)
+    assert_redirected_to todo_items_url
   end
 
   test "should show todo_item" do
@@ -35,7 +35,7 @@ class TodoItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should update todo_item" do
     patch todo_item_url(@todo_item), params: { todo_item: { title: @todo_item.title } }
-    assert_redirected_to todo_item_url(@todo_item)
+    assert_redirected_to todo_items_url
   end
 
   test "should destroy todo_item" do

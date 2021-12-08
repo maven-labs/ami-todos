@@ -25,3 +25,19 @@ Once Ruby and NodeJS are installed:
 ```sh
 ./bin/setup
 ```
+
+## Testing
+
+Both `rspec` and `minitest` (rails flavor) are configured so feel free to use either framework to write and run tests.
+
+For rspec:
+
+```ruby
+bundle exec rspec
+```
+
+For minitest:
+
+```
+bundle exec rails test
+```
